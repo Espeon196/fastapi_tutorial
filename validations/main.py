@@ -8,6 +8,7 @@ app = FastAPI()
 
 StringConstr = constr(min_length=3, max_length=50, regex=r"^[a-z]*$")
 
+
 @app.get("/items/")
 async def read_items(
     q: Optional[list[StringConstr]] = Query(
@@ -25,7 +26,8 @@ async def read_items(
 
 
 @app.get("/items/{item_id}")
-async def read_items_with_id(*,
+async def read_items_with_id(
+    *,
     item_id: int = Path(title="The ID of the item to get", ge=1),
     q: Optional[str] = Query(default=None, alias="item-query"),
     r: str,

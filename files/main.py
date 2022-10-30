@@ -37,7 +37,7 @@ async def main():
 
 
 @app.post("/all_files/")
-async def create_file(
+async def create_all_file(
     file: bytes = File(), fileb: UploadFile = File(), token: str = Form(),
 ):
     return {
