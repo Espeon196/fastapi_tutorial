@@ -10,6 +10,7 @@ cryptography = "*"
 passlib = {extras = ["bcrypt"], version = "*"}
 sqlalchemy = "*"
 aiofiles = "*"
+pytest = "*"
 
 [dev-packages]
 flake8 = "*"
