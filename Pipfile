@@ -8,9 +8,11 @@ fastapi = {extras = ["all"], version = "*"}
 python-jose = {extras = ["cryptography"], version = "*"}
 cryptography = "*"
 passlib = {extras = ["bcrypt"], version = "*"}
-sqlalchemy = "*"
+sqlalchemy = "==1.4.1"
 aiofiles = "*"
 pytest = "*"
+databases = {extras = ["aiosqlite"], version = "*"}
+couchbase = "*"
 
 [dev-packages]
 flake8 = "*"
