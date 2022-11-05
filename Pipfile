@@ -13,6 +13,8 @@ aiofiles = "*"
 pytest = "*"
 databases = {extras = ["aiosqlite"], version = "*"}
 couchbase = "*"
+httpx = "*"
+trio = "*"
 
 [dev-packages]
 flake8 = "*"
